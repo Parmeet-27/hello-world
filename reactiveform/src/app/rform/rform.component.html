@@ -1,0 +1,42 @@
+<form [formGroup] = "loginForm">
+   <div class="row d-flex-fill">
+        <div class="col-sm-6">
+            <label for="">Username</label>
+            <input type="text" formControlName="name">
+        </div>
+    </div>
+    <div class="row d-flex-fill">
+        <div class="col-sm-6">
+            <label for="">Password</label>
+            <input type="text" formControlName="pwd">
+        </div>               
+    </div>
+    <button click ="onSubmit()" type="submit" class="btn btn-primary"> Submit</button>
+    <button click ="filtered()" class="btn btn-info"> Filter</button>                   
+</form>
+<!-- <table>
+    <th>Username</th>
+    <th>Password</th>
+
+    <tr>
+        <td>Parmeet</td>
+        <td>value1</td>
+    </tr>
+    <tr>
+        <td>Ajay</td>
+        <td>value2</td>
+    </tr>
+    <tr>
+        <td>Manay</td>
+        <td>value3</td>
+    </tr>
+</table> -->
+<br><br><br><br>
+<ul>
+  <li *ngFor ="let record of filteredRecords">
+    {{ record.name }} - {{ record.otherProperty }}
+  </li>
+</ul>
+
+
+    

@@ -1,0 +1,20 @@
+/* app-form.component.css */
+/* .error-input {
+    border: 1px solid red;
+    /* Add any other styling for the error state of the input 
+  }
+   
+   /* app-form.component.css */
+.error-container {
+    position: relative;
+  }
+  
+  .error-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    /* Add any other styling for the error icon */
+  }
+  
